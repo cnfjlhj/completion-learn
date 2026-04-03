@@ -1,58 +1,68 @@
-<svg width="1600" height="720" viewBox="0 0 1600 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="380" viewBox="0 0 1200 380" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="80" y1="60" x2="1500" y2="640" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F6F0E2"/>
-      <stop offset="0.5" stop-color="#F3E8D3"/>
-      <stop offset="1" stop-color="#E7DCC3"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a1b2e"/>
+      <stop offset="1" stop-color="#16213e"/>
     </linearGradient>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#FFF9EF" stop-opacity="0.95"/>
-      <stop offset="1" stop-color="#F7F0E2" stop-opacity="0.88"/>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f0c27f" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#f0c27f" stop-opacity="0.04"/>
     </linearGradient>
-    <filter id="shadow" x="0" y="0" width="1600" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#5B4B2A" flood-opacity="0.12"/>
-    </filter>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7ec8a8" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#7ec8a8" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7ba7d0" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#7ba7d0" stop-opacity="0.04"/>
+    </linearGradient>
   </defs>
 
-  <rect width="1600" height="720" rx="36" fill="url(#bg)"/>
-  <circle cx="1360" cy="132" r="210" fill="#D49A46" fill-opacity="0.13"/>
-  <circle cx="148" cy="620" r="180" fill="#7D9C7C" fill-opacity="0.12"/>
-  <path d="M0 560C240 500 350 650 590 610C827 571 920 390 1192 423C1386 447 1494 525 1600 580V720H0V560Z" fill="#C8D4BE" fill-opacity="0.28"/>
+  <rect width="1200" height="380" fill="url(#bg)"/>
 
-  <g filter="url(#shadow)">
-    <rect x="74" y="86" width="1452" height="548" rx="28" fill="url(#panel)"/>
-  </g>
+  <!-- Decorative circles -->
+  <circle cx="1060" cy="60" r="220" fill="#f0c27f" fill-opacity="0.03"/>
+  <circle cx="120" cy="340" r="180" fill="#7ec8a8" fill-opacity="0.03"/>
+  <circle cx="600" cy="-40" r="300" fill="#7ba7d0" fill-opacity="0.02"/>
 
-  <text x="128" y="184" fill="#4C3C21" font-family="Georgia, 'Times New Roman', serif" font-size="70" font-weight="700">completion-learn</text>
-  <text x="130" y="236" fill="#6B5A3A" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="27">
-    A completion-only learning skill that puts self improvement before collaboration,
-  </text>
-  <text x="130" y="272" fill="#6B5A3A" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="27">
-    and collaboration before tool evolution.
-  </text>
+  <!-- Title -->
+  <text x="72" y="100" fill="#e8e6e3" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="700" letter-spacing="-0.5">completion-learn</text>
 
-  <rect x="130" y="334" width="400" height="228" rx="24" fill="#FFF8EA"/>
-  <rect x="132" y="336" width="396" height="224" rx="22" stroke="#D9C49B"/>
-  <text x="164" y="390" fill="#3F3120" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">1. Self</text>
-  <text x="164" y="436" fill="#5F533E" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="24">Keep attention local.</text>
-  <text x="164" y="472" fill="#5F533E" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="24">Name the behavior to stop.</text>
-  <text x="164" y="508" fill="#5F533E" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="24">Choose one next deliberate practice.</text>
+  <!-- Subtitle -->
+  <text x="74" y="138" fill="#8b8da0" font-family="'Segoe UI', Arial, sans-serif" font-size="20">Turn finished tasks into lasting growth — self first, tools last.</text>
 
-  <rect x="602" y="334" width="400" height="228" rx="24" fill="#F2F8F0"/>
-  <rect x="604" y="336" width="396" height="224" rx="22" stroke="#A9C2A0"/>
-  <text x="636" y="390" fill="#264230" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">2. Collaboration</text>
-  <text x="636" y="436" fill="#476250" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="24">Set the default interaction pattern.</text>
-  <text x="636" y="472" fill="#476250" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="24">Clarify earlier. Split ownership better.</text>
-  <text x="636" y="508" fill="#476250" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="24">Keep the human in real control.</text>
+  <!-- Card 1: Self -->
+  <rect x="72" y="180" width="330" height="130" rx="12" fill="url(#gold)" stroke="#f0c27f" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="92" y="216" fill="#f0c27f" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">01</text>
+  <text x="122" y="216" fill="#e8e6e3" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700">Self</text>
+  <text x="92" y="248" fill="#a0a0b0" font-family="'Segoe UI', Arial, sans-serif" font-size="15">Keep · Stop · Practice · Rule</text>
+  <text x="92" y="278" fill="#6a6a7a" font-family="'Segoe UI', Arial, sans-serif" font-size="13">Reclaim your attention and judgment</text>
+  <text x="92" y="296" fill="#6a6a7a" font-family="'Segoe UI', Arial, sans-serif" font-size="13">before reaching for more tools.</text>
 
-  <rect x="1074" y="334" width="324" height="228" rx="24" fill="#FCF2E6"/>
-  <rect x="1076" y="336" width="320" height="224" rx="22" stroke="#D6A96B"/>
-  <text x="1108" y="390" fill="#6D4720" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">3. Tool</text>
-  <text x="1108" y="436" fill="#7C5B35" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="24">Sediment what repeats.</text>
-  <text x="1108" y="472" fill="#7C5B35" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="24">Optimize weak skills first.</text>
-  <text x="1108" y="508" fill="#7C5B35" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="24">Create a new skill only when needed.</text>
+  <!-- Arrow 1 -->
+  <line x1="414" y1="245" x2="432" y2="245" stroke="#505070" stroke-width="1.5"/>
+  <polygon points="432,240 444,245 432,250" fill="#505070"/>
 
-  <text x="130" y="610" fill="#6C624F" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="22">
-    completion is not the end of the task. it is the entry point to the learning loop.
-  </text>
+  <!-- Card 2: Collaboration -->
+  <rect x="456" y="180" width="330" height="130" rx="12" fill="url(#green)" stroke="#7ec8a8" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="476" y="216" fill="#7ec8a8" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">02</text>
+  <text x="506" y="216" fill="#e8e6e3" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700">Collaboration</text>
+  <text x="476" y="248" fill="#a0a0b0" font-family="'Segoe UI', Arial, sans-serif" font-size="15">Pattern · Clarity · Ownership</text>
+  <text x="476" y="278" fill="#6a6a7a" font-family="'Segoe UI', Arial, sans-serif" font-size="13">Stabilize the human-tool loop.</text>
+  <text x="476" y="296" fill="#6a6a7a" font-family="'Segoe UI', Arial, sans-serif" font-size="13">Clarify earlier, split ownership better.</text>
+
+  <!-- Arrow 2 -->
+  <line x1="798" y1="245" x2="816" y2="245" stroke="#505070" stroke-width="1.5"/>
+  <polygon points="816,240 828,245 816,250" fill="#505070"/>
+
+  <!-- Card 3: Tool -->
+  <rect x="840" y="180" width="290" height="130" rx="12" fill="url(#blue)" stroke="#7ba7d0" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="860" y="216" fill="#7ba7d0" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">03</text>
+  <text x="890" y="216" fill="#e8e6e3" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700">Tool</text>
+  <text x="860" y="248" fill="#a0a0b0" font-family="'Segoe UI', Arial, sans-serif" font-size="15">Sediment · Optimize · Route</text>
+  <text x="860" y="278" fill="#6a6a7a" font-family="'Segoe UI', Arial, sans-serif" font-size="13">Evolve only what truly repeats.</text>
+  <text x="860" y="296" fill="#6a6a7a" font-family="'Segoe UI', Arial, sans-serif" font-size="13">Optimize before creating anew.</text>
+
+  <!-- Bottom tagline -->
+  <text x="72" y="355" fill="#4a4a5a" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic">Completion is not the end — it is the entry point to the learning loop.</text>
 </svg>

@@ -1,121 +1,93 @@
-# completion-learn: why tool changes should not be the first move after a finished task
+# Why tool changes should not be the first move after a finished task
 
-Many people treat task completion as the endpoint.
+> Completion is not the end of the task — it is the entry point to the learning loop.
 
-For heavy AI-tool users, that is usually the exact moment where the most valuable learning is either captured or wasted. The context is still fresh. The real bottlenecks, wrong assumptions, and useful moves are still visible. If you do not convert them into reusable rules, they disappear back into the transcript.
-
-`completion-learn` is built around one idea:
-
-> completion is not the end of the task; it is the entry point to the learning loop.
+For heavy AI-tool users, the moment a task is done is usually the moment where the most valuable learning is either captured or wasted. The context is still fresh, the bottlenecks are still visible, and the wrong assumptions have not yet faded. You can convert all of it into reusable advantage — or you can let it dissolve into "anyway, it's done."
 
 The problem is that most post-task reflection degrades into one of two weak forms:
 
-1. a nicer recap
-2. a tool-first wishlist with little human growth inside it
+1. A nicer recap that nobody acts on
+2. A tool-first wishlist with no human growth inside it
 
-That is why the default order is fixed:
+`completion-learn` fixes this by locking the default order: **Self → Collaboration → Tool**.
 
-1. `self`
-2. `collaboration`
-3. `tool`
+---
 
-## Why self comes first
+## Self: why the human comes first
 
 The main failure mode for many AI-heavy workflows is not lack of tools. It is loss of attention, weaker self-noticing, and outsourced judgment.
 
-If each retrospective jumps straight to prompts, scripts, agents, and automation, the user may learn more setup details while becoming less capable of noticing:
+You may know more commands, more prompts, more skills — but if you stop asking yourself:
 
-- what the real bottleneck was
-- which judgment should have stayed local
-- what should be practiced next
-- where stronger self-observation would have changed the outcome
+- What was the real bottleneck here?
+- Did I outsource a judgment that should have stayed with me?
+- What should I deliberately practice next?
+- Where would earlier self-awareness have changed the outcome?
 
-The self axis exists to reverse that drift. It keeps the first claim on attention for:
+— then more tools just means more drift.
 
-- `Keep`
-- `Stop`
-- `Practice next`
-- `Durable rule`
+The Self axis exists to reverse that. It demands four concrete outputs: **Keep · Stop · Practice next · Durable rule**. On purpose. Abstract reflections rarely change behavior; these four actions do.
 
-These are small outputs on purpose. The goal is not reflection theater. The goal is next-task behavior change.
+## Collaboration: why the operating loop comes second
 
-## Why collaboration comes second
+The Collaboration axis is not generic teamwork advice. It is about one specific question: is the operating loop between you and your tools stable?
 
-The collaboration axis is not generic teamwork language. It is about the operating loop between the human and the tool:
+- What interaction pattern should become default?
+- What should be clarified earlier next time?
+- How much visibility is enough — not overloaded, not blind?
+- Where should ownership stay with you, and where should the tool act?
 
-- what interaction pattern should become default
-- what should be clarified earlier
-- how much visibility is enough
-- where ownership should stay with the human and where the tool should act
+Many painful tasks come from unstable collaboration patterns, not from weak humans or weak tools in isolation. A better operating loop found in one task often outlasts any local prompt tweak.
 
-Many painful tasks come from unstable collaboration patterns rather than weak human ability or weak tools in isolation. Fixing the operating loop often pays off longer than a local prompt tweak.
+## Tool: why it comes last
 
-## Why tool comes last
+Not because tools do not matter, but because they are seductive. The moment you start a debrief, the natural impulse is: *should I add another script? Another command? Another automation?*
 
-Tool evolution matters, but it is seductive. It easily crowds out the harder and more important reflections.
+Those are valid questions. But if they arrive before the first two axes are done, the result is a larger tool stack instead of a stronger operator.
 
-After a task, people naturally want to ask:
+The Tool axis covers two things, both with restraint:
 
-- should I add another script?
-- should I turn this into a skill?
-- should I add more automation?
+1. **Skill sedimentation** — is this workflow worth turning into a skill at all?
+2. **Existing skill optimization** — if yes, should you create something new or improve what already exists?
 
-Those are valid questions, but if they arrive too early, the result is usually a larger tool stack instead of a stronger operator.
+Diagnosis first. If confidence is low, stop at the recommendation instead of writing anything into the system.
 
-That is why the tool axis in `completion-learn` explicitly covers both:
+---
 
-1. `skill sedimentation`
-2. `existing skill optimization`
+## Diagnosis before routing
 
-It does not only ask whether a workflow should become a new skill. It also asks whether the real move is to improve an existing skill instead of creating yet another one.
+`completion-learn` does not assume "a new skill should be created." It diagnoses first, then routes:
 
-## Why diagnosis should come before routing
+- Boundary still correct but skill is weak → `skill-optimizer`
+- Boundary should expand or a complementary skill is needed → `skill-creator`
+- Evidence insufficient → stop at recommendation
 
-This skill is intentionally diagnostic first.
+This prevents a common failure: one intense task finishes, emotions and context are running hot, and a one-off pattern gets prematurely hard-coded into the tool system.
 
-The right structure is:
+## The long-term loop
 
-1. `completion-learn` diagnoses the lesson
-2. route to `skill-optimizer` when the skill boundary is still right but the skill is weak
-3. route to `skill-creator` when the boundary should expand or a complementary skill should exist
-4. stop at recommendation when confidence is low
+If you work with AI tools over time, the intended learning loop is:
 
-Without that separation, it is too easy to overfit one intense task and prematurely hard-code it into the tool system.
-
-## A healthier long-term loop
-
-The intended learning loop is:
-
-```text
+```
 task done
-  -> self: how does the user become stronger
-  -> collaboration: how do user and tool work better together
-  -> tool: what deserves sedimentation or optimization
+  → self:          how do I become steadier, clearer, stronger
+  → collaboration:  how does the default human-tool loop improve
+  → tool:           what deserves sedimentation or optimization
 ```
 
-This order is not about completeness. It is about preventing drift toward tool obsession while protecting judgment, ownership, and clarity.
+The point of this order is not completeness — it is **drift prevention**. It stops the debrief from sliding into tool obsession, and it protects the harder, more important work of upgrading your own observation and judgment.
 
 ## When not to use it
 
-Do not use `completion-learn`:
+`completion-learn` is completion-only. Do not use it when:
 
-- when the task is still in progress
-- when you only need a checkpoint
-- when the real need is more implementation or debugging
-- when what you want is emotional closure instead of reusable learning
+- The task is still in progress
+- You only need a checkpoint
+- The real need is more implementation or debugging
+- What you want is emotional closure, not reusable learning
 
-It is a completion-only lane.
+It fits exactly one moment: **the task is done enough to be honest about what happened.**
 
-## Why this repository exists
+---
 
-This skill was split into a standalone repository because the pattern is important enough to deserve a clean public home:
-
-- completion debriefing should be more than a closing summary
-- self-improvement should not be buried under tool chatter
-- collaboration patterns should be made explicit
-- tool evolution should include both new-skill sedimentation and existing-skill improvement
-
-The main question after a finished task is not only whether the task succeeded.
-
-It is whether the user became stronger from it.
-
+The real question after a finished task is not whether it succeeded. It is whether you became stronger from it.

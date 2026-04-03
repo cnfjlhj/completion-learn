@@ -3,118 +3,86 @@
 </p>
 
 <p align="center">
-  <a href="docs/three-axis-evolution.en.md"><strong>Read the design note</strong></a> · <a href="SKILL.md">SKILL</a> · <a href="references">References</a> · <a href="commands/learn-complete.md">Command Wrapper</a> · <a href="README.md">中文</a>
+  <strong>Turn finished tasks into lasting growth — self first, tools last.</strong>
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License" /></a>&nbsp;&nbsp;
+  <a href="README.md">中文</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="docs/three-axis-evolution.en.md">Design Note</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="SKILL.md">Skill Definition</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="references">References</a>
 </p>
 
 ---
 
-`completion-learn` is a completion-only learning skill. It is designed for the moment after the work is genuinely done, when the next value is not more execution but better judgment, better collaboration patterns, and better tool evolution.
+Most post-task reviews end up as either a polished summary or a tool wishlist. Neither makes you stronger.
 
-The default mode is a fixed three-axis debrief:
+`completion-learn` runs a fixed three-axis debrief after a task is done:
 
-1. improve the user
-2. improve user-tool collaboration
-3. improve the tool stack
+> **Self → Collaboration → Tool**
 
-That order is deliberate. Too many retrospectives jump straight into prompts, scripts, or automation. `completion-learn` starts with attention, judgment, ownership, and self-noticing first, then moves to collaboration, and only then to tools.
+First, what should *you* keep, stop, or practice. Then, how should the human-tool loop change. Only then, what deserves to become a skill.
 
-> Public-facing label: `Three-Axis Growth Debrief`
->
-> One-line pitch: turn a finished task into stronger judgment with a three-axis review: `self -> collaboration -> tool`.
+The order is deliberate — tools are seductive, and they easily crowd out the harder question: *did you actually grow?*
 
-## How To Describe This Repo
+## The Three Axes
 
-If you want to share this repository with someone else, the shortest accurate description is:
-
-> a completion-only learning skill that improves the user first, collaboration second, and tools third, while deciding whether a workflow should become a skill or whether an existing skill should simply be improved.
-
-## What It Does
-
-- turns a finished task into reusable rules instead of a nicer recap
-- keeps the visible priority order as `self -> collaboration -> tool`
-- treats tool evolution as both `skill sedimentation` and `existing skill optimization`
-- routes high-confidence tool decisions into `skill-optimizer` or `skill-creator` instead of forcing the wrong next step
-
-## Repository Contents
-
-- [`SKILL.md`](SKILL.md): the public skill definition
-- [`references/`](references): the resource pack behind the three-axis debrief
-- [`commands/learn-complete.md`](commands/learn-complete.md): an optional Claude Code slash-command wrapper
-- [`docs/three-axis-evolution.en.md`](docs/three-axis-evolution.en.md): the design note behind the skill
-- [`docs/figs/hero-banner.svg`](docs/figs/hero-banner.svg): repository banner
+|  | Self | Collaboration | Tool |
+|:---:|---|---|---|
+| **Core question** | What to keep, stop, practice? | What should the default loop be? | What deserves sedimentation? |
+| **Output** | Keep · Stop · Practice · Rule | Pattern · Clarity · Ownership | Sediment · Optimize · Route |
 
 ## Quick Start
 
-For Codex, place this repository at:
-
 ```bash
-~/.codex/skills/completion-learn
+# Codex
+cp -r completion-learn ~/.codex/skills/
+
+# Claude Code
+cp -r completion-learn ~/.claude/skills/
 ```
 
-For Claude Code, sync the same directory to:
+After a task is done:
 
-```bash
-~/.claude/skills/completion-learn
 ```
-
-If you want a direct slash command, also install:
-
-```bash
-commands/learn-complete.md
-```
-
-into your Claude Code commands directory.
-
-## Default Usage
-
-```text
 /learn-complete
 ```
 
-This means:
+Focus variants:
 
-> the task is done; help me become better from it.
-
-Supported focus variants:
-
-```text
-/learn-complete debugging
-/learn-complete workflow
-/learn-complete collaboration
 ```
-
-Recommendation-only mode:
-
-```text
+/learn-complete debugging
+/learn-complete collaboration
 /learn-complete recommendation only, do not edit skill files
 ```
 
-If you want a more public-friendly label, you can refer to the repo as:
+## Who It's For
 
-```text
-Three-Axis Growth Debrief
-```
+- Heavy AI-tool users who notice they're observing themselves less over time
+- Anyone who wants each task to compound into the next advantage
+- People looking for a stable learning loop: **grow yourself first, then collaboration, then tools**
 
-while keeping the internal skill id as:
+## Tool Axis Design
 
-```text
-completion-learn
-```
+Most debriefs only ask "should this become a skill?" `completion-learn` asks two things:
 
-This keeps local compatibility intact while making the public story easier to spread.
+- Is this workflow **worth** sedimenting at all?
+- If yes, should you **create** a new skill or **optimize** an existing one?
 
-## Tool-Evolution Routing
+Diagnosis before routing — avoiding premature codification of one-off patterns.
 
-`completion-learn` is intentionally diagnostic first.
+## Learn More
 
-- If the existing skill boundary is still right but the skill is weak, route to `skill-optimizer`.
-- If the boundary should expand or a complementary skill should exist, route to `skill-creator`.
-- If confidence is low, stop at the recommendation instead of forcing edits.
+- **[Why self comes before tools](docs/three-axis-evolution.en.md)** — full design note
+- [Skill Definition](SKILL.md) — complete skill prompt
+- [References](references) — resource pack
+- [Slash Command](commands/learn-complete.md) — Claude Code wrapper
 
-## Background
+## Origin
 
-This repository is split out from [`ai-collab-playbook`](https://github.com/cnfjlhj/ai-collab-playbook). The standalone version exists because completion debriefing, self-improvement, and skill evolution deserve a clean public home instead of being buried as a small subsection in a larger workflow repo.
+Split from [ai-collab-playbook](https://github.com/cnfjlhj/ai-collab-playbook) as a standalone skill.
 
 ## License
 
-Released under the [`MIT`](LICENSE) license.
+[MIT](LICENSE)
