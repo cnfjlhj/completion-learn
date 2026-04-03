@@ -18,6 +18,16 @@ The default mode is a fixed three-axis debrief:
 
 That order is deliberate. Too many retrospectives jump straight into prompts, scripts, or automation. `completion-learn` starts with attention, judgment, ownership, and self-noticing first, then moves to collaboration, and only then to tools.
 
+> Public-facing label: `Three-Axis Growth Debrief`
+>
+> One-line pitch: turn a finished task into stronger judgment with a three-axis review: `self -> collaboration -> tool`.
+
+## How To Describe This Repo
+
+If you want to share this repository with someone else, the shortest accurate description is:
+
+> a completion-only learning skill that improves the user first, collaboration second, and tools third, while deciding whether a workflow should become a skill or whether an existing skill should simply be improved.
+
 ## What It Does
 
 - turns a finished task into reusable rules instead of a nicer recap
@@ -78,6 +88,20 @@ Recommendation-only mode:
 ```text
 /learn-complete recommendation only, do not edit skill files
 ```
+
+If you want a more public-friendly label, you can refer to the repo as:
+
+```text
+Three-Axis Growth Debrief
+```
+
+while keeping the internal skill id as:
+
+```text
+completion-learn
+```
+
+This keeps local compatibility intact while making the public story easier to spread.
 
 ## Tool-Evolution Routing
 
