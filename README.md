@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <strong>把"做完"变成"变强"的三轴复盘 Skill</strong>
+  <strong><code>completion-learn</code> · 把“做完”变成“变强”的 completion debrief skill</strong>
 </p>
 
 <p align="center">

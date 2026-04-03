@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <strong>Turn finished tasks into lasting growth — self first, tools last.</strong>
+  <strong><code>completion-learn</code> · turn finished tasks into lasting growth.</strong>
 </p>
 
 <p align="center">
