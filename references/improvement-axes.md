@@ -4,9 +4,15 @@ Use this file in the default no-argument mode of `completion-learn`.
 
 The default debrief should answer three questions:
 
-1. How does the user get better?
-2. How do the user and tool get better together?
-3. How does the tool stack get better?
+1. What should remain on the human side after this task?
+2. What should remain in the human-tool collaboration loop?
+3. What in the tool stack deserves sedimentation or evolution?
+
+Reason separately about:
+- `task completion`
+- `capability residue`
+
+The visible output stays three-axis by default, but the reasoning should not assume that a completed task automatically produced retained capability.
 
 ## Priority Order
 
@@ -21,12 +27,12 @@ If the debrief must stay short, keep this order. Do not let tool commentary crow
 ## Axis 1: User Improvement
 
 Answer in terms of:
-- what the user should keep
+- what from the user's input process should be kept
 - what the user should stop
-- what the user should practice next
+- what the user should practice next under less support or in a nearby transfer task
 - one durable rule the user can reuse
 
-This axis is about personal judgment, execution, writing, debugging, research thinking, or operating discipline.
+This axis is about attention, phrasing, emotional handling, ownership, judgment, execution, writing, debugging, research thinking, or operating discipline.
 
 ## Axis 2: Human-Tool Collaboration Improvement
 
@@ -35,11 +41,13 @@ Answer in terms of:
 - what level of visibility or checkpointing worked best
 - what should be clarified earlier next time
 - what division of labor between human and tool should become standard
+- what collaboration move is worth retaining as the default loop
 
 ## Axis 3: Tool Improvement
 
 Answer in terms of:
 - what in the tool stack created drag, ambiguity, or wasted effort
+- what weakness the AI or tool layer exposed during the task
 - what should evolve in prompts, configs, commands, skills, checklists, or automation
 - whether the right move is:
   - extend an existing skill
@@ -58,4 +66,3 @@ If the debrief must stay short:
 - prefer future behavior change over retrospective explanation
 - prefer a recommendation that can be applied in the next task
 - cut tool detail before cutting self or collaboration detail
-

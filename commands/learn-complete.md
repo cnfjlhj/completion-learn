@@ -26,7 +26,12 @@ If completion is clear:
 
 1. Activate the `completion-learn` skill.
 2. Use the whole current task context, not only the latest message.
-3. If `$ARGUMENTS` is empty, run the default three-axis evolution mode.
+3. Before writing the debrief, privately judge whether the outcome was closer to:
+   - `mostly assisted performance`
+   - `partial internalization`
+   - `durable capability gain`
+   Keep this judgment implicit by default. Do not add it as a visible fourth section unless the user explicitly asks for that distinction.
+4. If `$ARGUMENTS` is empty, run the default three-axis evolution mode.
    The result should tell the user:
    - what mattered most
    - how they themselves should improve
@@ -37,29 +42,32 @@ If completion is clear:
    - one concrete collaboration-evolution recommendation
    - one concrete tool-evolution recommendation
    - in tool evolution, explicitly consider both skill sedimentation and existing-skill optimization
-4. If `$ARGUMENTS` is non-empty, treat it as an emphasis or focus area.
+5. Shape the `next practice` using that private judgment:
+   - assisted outcome -> reduced-support retry on one small step
+   - partial internalization -> same bottleneck, user first and tool second
+   - durable gain -> nearby transfer task instead of same-task repetition
+6. If `$ARGUMENTS` is non-empty, treat it as an emphasis or focus area.
    Examples: `debugging`, `design`, `workflow`, `collaboration`, `research-writing`, `tool-use`, `decision-quality`, or a free-form question.
-5. In default mode, keep the visible priority order as:
+7. In default mode, keep the visible priority order as:
    - self
    - collaboration
    - tool
    unless the user explicitly overrides it.
-6. Pick one primary learning lens from the skill's references. Add a secondary lens only if it materially improves the debrief.
-7. Pick `Light`, `Standard`, or `Deep` depth based on novelty, mistakes, decisions, and likely future reuse.
-8. Produce the completion debrief in the skill's structure, including:
+8. Pick one primary learning lens from the skill's references. Add a secondary lens only if it materially improves the debrief.
+9. Pick `Light`, `Standard`, or `Deep` depth based on novelty, mistakes, decisions, and likely future reuse.
+10. Produce the completion debrief in the skill's structure, including:
    - durable rules
    - repeatable wins
    - mistake patterns
-   - one deliberate-practice next step
+   - one deliberate-practice next step that tests retained judgment under less support or in a nearby transfer context
    - skill evolution check
-9. If the tool-evolution result is high-confidence:
+11. If the tool-evolution result is high-confidence:
    - use `skill-optimizer` when an existing skill should be improved without changing its boundary
    - use `skill-creator` when an existing skill boundary should expand or a second complementary skill should be added
-10. If confidence is low, stop at the recommendation instead of forcing skill edits.
+12. If confidence is low, stop at the recommendation instead of forcing skill edits.
 
 Additional constraints:
 
 - Do not write code or modify files as part of this command.
 - Do not save notes automatically.
 - Optimize for durable understanding, not for a feel-good summary.
-

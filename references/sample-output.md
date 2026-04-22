@@ -25,9 +25,9 @@ The tool stack needs a stronger recovery path here. Add or tighten the skill/che
 When the task feels wide, narrow the bottleneck before increasing effort.
 
 `Next drill`
-On the next similar task, spend the first 3 minutes writing one sentence each for: bottleneck, verifier, and stop condition.
+On the next similar task, write `bottleneck`, `verifier`, and `stop condition` yourself before asking for help. Only after that ask the tool to critique the draft, not generate it first.
 
-`Skill evolution`
+`Skill sedimentation`
 Best move: optimize the existing skill first. The boundary already exists; the weakness is in the trigger/examples/references, not in the lack of a new skill.
 
 ## Notes
@@ -36,4 +36,4 @@ Best move: optimize the existing skill first. The boundary already exists; the w
 - The collaboration axis comes before tool evolution.
 - Tool evolution should stay concrete and small unless there is clear evidence for a new skill.
 - Prefer one strong recommendation per axis over bloated coverage.
-
+- The practice step should test retained judgment under less support, not just restate the advice.

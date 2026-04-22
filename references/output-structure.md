@@ -65,5 +65,6 @@ Output:
 - Make the output easy to act on within the next day or next similar task.
 - In default mode, make the three axes visible even if the debrief stays short.
 - Keep the visible order as `You -> Collaboration -> Tool` unless the user explicitly overrides it.
+- Keep `task completion` separate from `capability gain` in your reasoning, even when the visible output stays short.
+- `Next deliberate practice` should be a reduced-support drill or a nearby transfer task, not generic encouragement.
 - Avoid praise-only summaries.
-

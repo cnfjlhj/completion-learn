@@ -11,6 +11,9 @@ Use these questions to deepen a `completion-learn` debrief. Do not answer all of
 5. What should be practiced next rather than merely remembered?
 6. If the user could keep only one improvement from this task, what should it be?
 7. What should the user stop doing because it repeatedly creates drag?
+8. If the tool were removed tomorrow, which part would still hold up?
+9. Which part of the result was mostly scaffolded by the interaction rather than retained by the user?
+10. What is the smallest reduced-support retry that would test whether the lesson stuck?
 
 ## Three-Axis Questions
 
@@ -60,7 +63,6 @@ Always close by converting the debrief into:
 - one or two durable rules
 - one repeatable win
 - one thing to stop
-- one deliberate-practice next step
+- one deliberate-practice next step that removes one layer of support or forces transfer
 - one concrete collaboration-evolution recommendation
 - one concrete tool-evolution recommendation
-
